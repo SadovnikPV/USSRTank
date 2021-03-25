@@ -1,0 +1,238 @@
+/*------------------ Стили главной страницы --------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#page_wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+#header {
+	position: relative;
+	height: 100px;
+	background-image:url(/img/header.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color: #c7000a;
+}
+
+#header_mini {
+	position: relative;
+	display: none;
+	height: 20px;
+	background-color: #c7000a;
+}
+
+#header p, #header_mini p {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0 10px 5px 0;
+}
+
+#tip {
+	margin: 0 10px 0 10px;
+	padding: 5px;
+	font-weight: bold;
+	border-radius: 10px;
+	background-color: #c7000a;
+}
+
+#header a, #header_mini a, #tip a {
+	color: #e2e30b;
+}
+
+
+#main_content {
+	padding: 10px 0 10px 0;
+	flex: 1 0 auto;
+	text-align: center;
+	background-color: #000;
+}
+
+#footer {
+	text-align: center;
+	flex: 0 0 auto;
+	background-color: #c7000a;
+}
+
+
+/*------------------ Стили страницы конструктора --------------------*/
+
+#ConstructorMainWindow, #ConstructorTankMainWindow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+}
+
+#ConstructorTankMainWindow {
+	margin: 10px 0 10px 0;
+}
+
+#ConstructorControl {
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+
+#ConstructorLevelMap {
+	width: 544px;
+	min-width: 544px;
+	height: 544px;
+	border: 2px solid #000;
+	border-radius: 4px;
+	margin: 0 10px 0 10px;
+}
+
+#ConstructorMenu, #ConstructorTankMenu {
+	width: 300px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 0 0 10px 0;
+}
+
+#ConstructorLevelCode {
+	margin: 10px 0 0 0;
+	background-color: #c23ca2;
+	border-radius: 10px;
+}
+
+#ConstructorTankAll {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 544px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	margin: 0 0 0 10px;
+}
+
+.ConstructorMapRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+}
+
+.ConstructorMapCell {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+	background-size: cover;
+}
+
+.ConstructorMapCell:hover {
+	width: 28px;
+	height: 28px;
+	border: 2px solid red;
+	cursor: pointer;
+}
+
+.ConstructorMapCellWhenParent {
+	width: 32px;
+	height: 32px;
+}
+
+.ConstructorMapCellMini {
+	width: 14px;
+	height: 14px;
+	border: 1px solid #000;
+	background-size: cover;
+}
+
+.ConstructorMapCellMini:hover {
+	width: 12px;
+	height: 12px;
+	border: 2px solid red;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.ConstructorAddedTank {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #000;
+	background-size: cover;
+}
+
+.ConstructorMenuCell {
+	margin: 10px 10px 0 10px;
+	padding: 5px 5px 5px 5px;
+	vertical-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.ConstructorMenuCell:hover {
+	margin: 6px 10px 0 10px;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid red;
+	cursor: pointer;
+}
+
+.ConstructorMenuImg {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px 0 0;
+}
+
+.ConstructorMenuImgQuarter {
+	width: 16px;
+	height: 16px;
+	margin: 0 10px 0 10px;
+}
+
+.ConstructorMenuImgHalfHorizontal {
+	width: 32px;
+	height: 16px;
+	margin: 0 10px 0 0;
+}
+
+.ConstructorMenuImgHalfVertical {
+	width: 16px;
+	height: 32px;
+	margin: 0 10px 0 10px;
+}
+
+.ConstructorControlButton {
+	min-width: 200px;
+	min-height: 50px;
+	font-size: 18px;
+	background-color: grey;
+	border-radius: 10px;
+	text-align: center;
+	margin: 10px 10px 0 10px;
+}
+
+.ConstructorControlButton:hover {
+	background-color: yellow;
+	cursor: pointer;
+
+}
+
+#ConstructorLevelDescription {
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.ConstructorInputText, .ConstructorInputTextarea {
+	border-radius: 10px;
+	width: 200px;
+	height: 25px;
+	font-size: 18px;
+	padding: 0 5px 0 5px;
+	margin: 5px 0;
+}
+
+.ConstructorInputTextarea {
+	width: 600px;
+	height: 100px;
+}
